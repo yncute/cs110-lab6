@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Lab 6</title>
+  </head>
+  <body>
+    <div class="container">
+      <hr />
+      <h1>Create New Book</h1>
+      <hr />
+
+      <form action="http://localhost:3000/books" method="POST">
+        <div class="form-group">
+          <label for="ISBN">ISBN</label>
+          <input class="form-control" name="isbn" />
+        </div>
+
+        <div class="form-group">
+          <label for="Title">Title</label>
+          <input class="form-control" name="title" />
+        </div>
+
+        <div class="form-group">
+          <label for="Author">Author</label>
+          <input class="form-control" name="author" />
+        </div>
+
+        <div class="form-group">
+          <label for="PublishDate">Published Date</label>
+          <input class="form-control" name="publishdate" />
+        </div>
+
+        <div class="form-group">
+          <label for="Publisher">Publisher</label>
+          <input class="form-control" name="publisher" />
+        </div>
+
+        <div class="form-group">
+          <label for="PageCount">Number of Pages</label>
+          <input class="form-control" name="pagecount" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <script src="book-api.js"></script>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.min.js"></script>
+  </body>
+</html>
